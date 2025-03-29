@@ -1,0 +1,307 @@
+html, body {
+    height: 100%; /* Tam ekran yüksekliği */
+    margin: 0; /* Varsayılan boşlukları kaldır */
+    padding: 0; 
+}
+
+.loginBackground {
+    background: linear-gradient(90deg, rgba(8, 3, 78, 1) 0%, rgba(139, 142, 164, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    height: 100vh ;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-right: 50px;
+}
+
+/* Giriş ekranı */
+.login {
+    background: rgba(0, 212, 255, 1) 100%, rgba(139, 142, 164, 1) 50%, linear-gradient(90deg, rgba(8, 3, 78, 1) 0%);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    color: black;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 2px solid #66a6f0;
+}
+
+.loginButton{
+    background-color: #66a6f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+.loginButton:hover {
+    background-color: #5585d5;
+    transition: all 0.5s ease;
+}
+
+/* Butonlar için flex düzeni */
+.buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Sağ ve sol hizalama */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonContainer a{
+    color: black;
+    text-decoration: none;
+}
+
+.buttonContainer a:hover{
+   text-decoration:underline;
+}
+
+/* Arka plan */
+.kayitBackground {
+    background: linear-gradient(90deg, rgba(8, 3, 78, 1) 0%, rgba(139, 142, 164, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Kayıt formu */
+.kayit {
+    background: rgba(0, 212, 255, 1) 100%, rgba(139, 142, 164, 1) 50%, linear-gradient(90deg, rgba(8, 3, 78, 1) 0%);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    color: black;
+
+}
+
+/* Form elemanları */
+.kayit input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.kayit input:focus {
+    outline: none;
+    border-color: #66a6f0;
+    box-shadow: 0 0 5px rgba(102, 166, 240, 0.5);
+}
+
+/* Buton */
+.kayitButton {
+    background-color: #66a6f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.kayitButton:hover {
+    background-color: #5585d5;
+    transition: all 0.5s ease;
+}
+
+
+.anaEkran {
+    height: calc(100vh - 80px); /* Başlık kısmı hariç tüm sayfa yüksekliği */
+}
+
+.baslik {
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 80px;
+    background-color: #E3F2FD; /* Açık mavi arka plan */
+}
+
+
+.kategori {
+    background-color: #F8F9FA; /* Hafif gri arka plan */
+    border-right: 2px solid #ddd; /* Sağ tarafa çizgi */
+    padding: 10px;
+    height: 100%; /* Tam yüksekliğe uzanması */
+}
+
+.kategori ul {
+    padding: 10px;
+    list-style: none; /* Noktaları kaldırmak için */
+}
+/*
+.kategori a {
+    text-align: center;
+    display: inline-block;  Gerekirse 
+    text-decoration: none; /* Alt çizgiyi kaldırır 
+    padding: 10px 20px; /* Düğme görünümü için 
+    background-color: #007bff; /* Mavi arka plan 
+    color: white;
+    border-radius: 5px; /* Yuvarlak köşeler 
+}*/
+
+
+.kategori a {
+    display: inline; /* Düğme görünümünü kaldırmak için */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: black; /* Metin rengini siyah yapar */
+    padding: 0; /* Düğme stilinden kaynaklanan boşlukları kaldırır */
+    background-color: transparent; /* Arka plan rengini kaldırır */
+    border-radius: 0; /* Köşeleri düz yapar */
+}
+
+.kategori a:hover{
+    text-decoration: underline;
+}
+
+.kat_user {
+    display: flex;
+    flex-direction: column; /* Bağlantıları dikey olarak hizalar */
+    align-items: center; /* Yatayda ortalama */
+    padding: 2px; /* Üst ve alt boşlukları düzenlemek için */
+    font-size: 17px;
+    transition:  color 0.5s!important;
+}
+
+.kat_login{
+    color:  #007bff !important;
+    text-decoration: none!important; /* Alt çizgiyi kaldırır */
+}
+
+.kat_login:hover {
+    color: #004085!important; /* Mavi tonunda renk */
+   }
+
+.kat_logout {
+    text-decoration: none!important; 
+    color: #e63946!important; /* Çıkış için kırmızı renk */
+}
+
+.kat_logout:hover {
+    color: #bd2130!important;
+}
+
+
+.buttonContainer1 {
+    display: flex; /* Flexbox ile hizalama */
+    justify-content: center; /* Yatayda ortala */
+    margin-top: 20px; /* Üstten boşluk */
+}
+
+.KullanıcıGiris {
+    text-align: center;
+}
+
+.odemeSayfasi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1; /* arka plan için açık gri */
+    box-sizing: border-box;
+    padding: 40px;
+  
+}
+/* Splash ekranı için basit stil */
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 9999;
+    display: none; /* Başlangıçta gizli */
+}
+
+
+/* Splash ekranı için stil */
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none; /* Başlangıçta gizli */
+}
+
+/* Yükleme animasyonu */
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.menu {
+    background-color: #F8F9FA; /* Hafif gri arka plan */
+    border-right: 2px solid #ddd; /* Sağ tarafa çizgi */
+    padding: 10px;
+    height: 100%; /* Tam yüksekliğe uzanması */
+}
+
+.menu ul {
+    padding: 10px;
+    list-style: none; /* Noktaları kaldırmak için */
+}
+
+.menu a {
+    display: inline; /* Düğme görünümünü kaldırmak için */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: black; /* Metin rengini siyah yapar */
+    padding: 0; /* Düğme stilinden kaynaklanan boşlukları kaldırır */
+    background-color: transparent; /* Arka plan rengini kaldırır */
+    border-radius: 0; /* Köşeleri düz yapar */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde alt çizgi ekler */
+}
